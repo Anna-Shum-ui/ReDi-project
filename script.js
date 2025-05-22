@@ -2,7 +2,7 @@ const answers = ["Yes", "No", "Maybe", "Try again"];
 
 const answerGenerator = {
     getRandomAnswer : function() {
-        const index = Math.floor(Math.random() * 5);
+        const index = Math.floor(Math.random() * array.length);
     return answers[index];
     }
     
