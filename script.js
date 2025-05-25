@@ -2,7 +2,7 @@ const answers = ["Yes", "No", "Maybe", "Try again"];
 
 const answerGenerator = {
     getRandomAnswer : function() {
-        const index = Math.floor(Math.random() * array.length);
+        const index = Math.floor(Math.random() * answers.length);
     return answers[index];
     }
     
@@ -22,6 +22,7 @@ button.addEventListener("click", function() {
 
   const randomAnswer = answerGenerator.getRandomAnswer();
   result.textContent = "Answer: " + randomAnswer;
+  loadAdvice();
 });
 
 function loadAdvice() {
