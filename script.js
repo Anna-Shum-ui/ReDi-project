@@ -23,3 +23,17 @@ button.addEventListener("click", function() {
   const randomAnswer = answerGenerator.getRandomAnswer();
   result.textContent = "Answer: " + randomAnswer;
 });
+
+function loadAdvice() {
+  advice.textContent = "Loading...";
+
+  fetch("https://api.adviceslip.com/advice")
+    .then(response => response.json())
+    .then(data => {
+      advice.textContent = `"${data.slip.advice}"`;
+    })
+    .catch(error => {
+      advice.textContent = "Could not load advice.";
+      console.error('Fetch error:', error);
+    });
+}
