@@ -12,7 +12,7 @@ Phase 2:
 Add the quote of the day feature using an external API
 Improve visual styling
 
-Phase 3:
+Phase 3:(Planned, not yet implemented)
 Add the visual spinning wheel
 Add interaction history
 Optional: add effects or themed responses
