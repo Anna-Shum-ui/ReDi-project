@@ -13,10 +13,11 @@ const result = document.getElementById("result");
 const advice = document.getElementById("advice");
 
 button.addEventListener("click", function() {
-  const question = document.getElementById("questionInput").value;
+  const question = document.getElementById("questionInput").value.trim();
 
  if (question.trim() === "") {
     result.textContent = "Please type a question!";
+    result.style.color = "red";
     return;
   }
 
